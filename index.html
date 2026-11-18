@@ -25,8 +25,9 @@
       <li><a href="journey.html" class="nav-story">My Story</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -84,7 +85,7 @@
       <div class="story-teaser-text">
         <p class="section-kicker">The part a resume cannot hold</p>
         <h2>Born in Brahmapur. Failed a board exam. Published a book at 17.</h2>
-        <p>Six relocations, five schools, seven languages, thirteen states, eight sports, one startup and one very good reason to keep going. The full timeline, told in order, from 2004 to now.</p>
+        <p>Six relocations, five schools, seven languages, fourteen states, eight sports, one startup and one very good reason to keep going. The full timeline, told in order, from 2004 to now.</p>
         <a href="journey.html" class="btn primary">Read my story</a>
       </div>
       <div class="story-teaser-stats">
@@ -147,58 +148,28 @@
     </div>
   </section>
 
-  <section id="achievements" class="panel reveal">
-    <h2>Achievements</h2>
-    <p class="section-kicker">Wins and published work outside the day-to-day build log.</p>
-    <div class="award-grid">
-      <div class="card award-card reveal" data-href="https://github.com/23f2004742/Paytm-Business-Health-AI">
-        <div class="award-badge" aria-hidden="true">
-          <i class="fas fa-trophy"></i>
-        </div>
+  <section id="research" class="panel reveal">
+    <h2>Research</h2>
+    <p class="section-kicker">Controlled experiments on how models learn from noisy, imperfect data.</p>
+    <div class="compact-grid">
+      <div class="card compact-card reveal" data-href="noise_diversity.pdf">
         <div class="project-text">
-          <p class="project-label award-label">Winner &middot; National Hackathon</p>
-          <h3>Build for India AI Hackathon 2026</h3>
-          <p class="experience-date">2026 &middot; Hyderabad, Telangana</p>
-          <p class="experience-location">Team Photon AI &middot; Winning build: <b>Munim AI</b> - the Paytm AI soundbox that runs the whole "Dukan"</p>
-          <ul class="experience-details">
-            <li>Won the national AI hackathon with Munim AI, a voice-first business copilot that turns everyday shop-floor conversation into structured merchant data.</li>
-            <li>Built a voice khata, an automated collections agent, and a daily spoken CFO brief on top of the existing Paytm Soundbox - capturing cash sales, verbal udhaar, and out-of-stock demand that payment data never sees.</li>
-            <li>Designed the end-to-end pipeline: speech capture, Sarvam AI STT for Indian languages, LangGraph-based intent and entity extraction, ledger updates, and WhatsApp payment-reminder automation.</li>
-          </ul>
+          <p class="project-label">Preprint &middot; 2026</p>
+          <h3>Does Perturbation Diversity Buy Robustness to Unseen Noise? A Family-Held-Out Study of Noisy LoRA Fine-Tuning</h3>
+          <p>A controlled study of whether fine-tuning Qwen2.5-0.5B with LoRA on a <i>mixture</i> of text perturbation types makes it robust to noise types it never saw. Across 54 runs on BoolQ, mixing gave no gain over single-type training (-0.14 pp, 95% CI [-0.59, +0.31]). Robustness turned out to be specific to each perturbation type.</p>
           <div class="project-tags">
-            <span>Voice AI</span>
-            <span>LangGraph Agents</span>
-            <span>Sarvam AI STT</span>
-            <span>Fintech</span>
+            <span>LLM Robustness</span>
+            <span>LoRA</span>
+            <span>Data-Centric AI</span>
           </div>
-          <div class="project-actions award-actions">
-            <a href="https://github.com/23f2004742/Paytm-Business-Health-AI" target="_blank" rel="noopener">
-              <i class="fab fa-github" aria-hidden="true"></i>
-              View Repo
+          <div class="project-actions">
+            <a href="noise_diversity.pdf" target="_blank" rel="noopener">
+              <i class="fas fa-file-pdf" aria-hidden="true"></i>
+              Read Paper
             </a>
-          </div>
-        </div>
-      </div>
-      <div class="card award-card award-media reveal" data-href="https://www.amazon.in/What-your-Teenage-Helping-different/dp/B0B2D7ZB1Y/">
-        <div class="project-image">
-          <a href="https://www.amazon.in/What-your-Teenage-Helping-different/dp/B0B2D7ZB1Y/" target="_blank" rel="noopener" class="card-link">
-            <img src="wtdiyt.png" alt="What to Do in Your Teenage book cover">
-          </a>
-        </div>
-        <div class="project-text">
-          <p class="project-label award-label">Published Author</p>
-          <h3>What to Do in Your Teenage</h3>
-          <p class="experience-date">November 2021 - July 2023 &middot; Available on Amazon</p>
-          <p class="experience-location">A published guide for teenagers on confidence, initiative, exploration, creativity, and personal growth during their formative years.</p>
-          <div class="project-tags">
-            <span>Author</span>
-            <span>Personal Growth</span>
-            <span>Published Book</span>
-          </div>
-          <div class="project-actions award-actions">
-            <a href="https://www.amazon.in/What-your-Teenage-Helping-different/dp/B0B2D7ZB1Y/" target="_blank" rel="noopener">
-              <i class="fab fa-amazon" aria-hidden="true"></i>
-              View on Amazon
+            <a href="https://github.com/SoumyaranjanPanda01/noise-diversity-research" target="_blank" rel="noopener">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              Code &amp; Data
             </a>
           </div>
         </div>
@@ -428,6 +399,50 @@
               </div>
               <p>Built a 4-class ECG heartbeat arrhythmia classifier (Normal / Supraventricular / Ventricular / Fusion) trained entirely from scratch in PyTorch, with no pretrained weights or transfer learning. Used inter-patient GroupKFold cross-validation across recordings to prevent patient leakage, optimising for Macro F1.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="panel reveal">
+    <h2>Achievements</h2>
+    <p class="section-kicker">Wins and published work outside the day-to-day build log.</p>
+    <div class="compact-grid">
+      <div class="card compact-card reveal" data-href="https://github.com/23f2004742/Paytm-Business-Health-AI">
+        <div class="project-text">
+          <p class="project-label">Winner &middot; National Hackathon</p>
+          <h3>Build for India AI Hackathon 2026</h3>
+          <p class="experience-date">2026 &middot; Hyderabad, Telangana</p>
+          <p>Won with Team Photon AI's <b>Munim AI</b>, a voice-first business copilot on the Paytm Soundbox. It includes a voice khata, an automated collections agent and a daily spoken CFO brief, built with Sarvam AI STT, LangGraph and WhatsApp automation.</p>
+          <div class="project-tags">
+            <span>Voice AI</span>
+            <span>LangGraph Agents</span>
+            <span>Fintech</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/23f2004742/Paytm-Business-Health-AI" target="_blank" rel="noopener">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              View Repo
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card compact-card reveal" data-href="https://www.amazon.in/What-your-Teenage-Helping-different/dp/B0B2D7ZB1Y/">
+        <div class="project-text">
+          <p class="project-label">Published Author</p>
+          <h3>What to Do in Your Teenage</h3>
+          <p class="experience-date">November 2021 - July 2023 &middot; Available on Amazon</p>
+          <p>A published guide for teenagers on confidence, initiative, exploration, creativity, and personal growth during their formative years.</p>
+          <div class="project-tags">
+            <span>Author</span>
+            <span>Published Book</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://www.amazon.in/What-your-Teenage-Helping-different/dp/B0B2D7ZB1Y/" target="_blank" rel="noopener">
+              <i class="fab fa-amazon" aria-hidden="true"></i>
+              View on Amazon
+            </a>
           </div>
         </div>
       </div>

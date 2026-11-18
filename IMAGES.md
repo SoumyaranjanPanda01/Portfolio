@@ -33,7 +33,7 @@ If the source is large, resize it to about 2200px wide first.
 | `desk-work`, `home-build`, `scooter` | Ch 10, the in-between year |
 | `iitm-gate`, `iitm-hoodie`, `iitm-art` | Ch 11, IIT Madras |
 | `charminar`, `humayun`, `mahabalipuram` | Ch 12, travel |
-| `humayun-wide`, `delhi-friend`, `balloon-trip`, `monument`, `hill-view`, `viewpoint`, `trek`, `sea-alone`, `beach-sunrise`, `friends-sea` | Travel mosaic |
+| `humayun-wide`, `delhi-friend`, `balloon-trip`, `monument`, `hill-view`, `viewpoint`, `trek`, `sea-alone`, `beach-sunrise`, `friends-sea`, `kerala-kayak` | Travel mosaic |
 | `paradox`, `flat-friends`, `beach-night` | Ch 13, Chennai |
 | `friends`, `friends-campus`, `friends-night`, `bus-friends`, `friends-outing`, `team-room`, `college-group`, `beach-joy` | Interlude, uncountable friends |
 | `coworking`, `soapp-polo`, `laptop-stickers` | Ch 14, SoApp |

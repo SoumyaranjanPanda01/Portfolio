@@ -795,98 +795,30 @@ footer {
   }
 }
 
-.award-grid {
+/* ---------- compact cards (research, achievements) ---------- */
+
+.compact-grid {
   display: grid;
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
 }
 
-.award-card {
-  display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  align-items: start;
-  gap: 26px;
-  padding: 34px;
+.compact-card {
   text-align: left;
-  border-color: rgba(255, 209, 102, 0.34);
-  background:
-    linear-gradient(135deg, rgba(255, 209, 102, 0.16), rgba(255, 255, 255, 0.04) 46%, rgba(0, 212, 255, 0.12)),
-    var(--panel-strong);
 }
 
-.award-card:hover {
-  border-color: rgba(255, 209, 102, 0.68);
-  box-shadow: 0 26px 90px rgba(0, 0, 0, 0.56), 0 0 42px rgba(255, 209, 102, 0.16);
+.compact-card .project-text h3 {
+  font-size: 1.15rem;
 }
 
-.award-card::after {
-  content: '';
-  position: absolute;
-  inset: auto 20px 20px auto;
-  width: 82px;
-  height: 82px;
-  border-right: 1px solid rgba(255, 255, 255, 0.18);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.award-badge {
-  display: grid;
-  place-items: center;
-  width: 92px;
-  height: 92px;
-  border: 1px solid rgba(255, 209, 102, 0.42);
-  border-radius: 999px;
-  color: var(--accent-3);
-  font-size: 2.1rem;
-  background: rgba(255, 209, 102, 0.1);
-  box-shadow: 0 0 38px rgba(255, 209, 102, 0.18);
-}
-
-.award-card .project-text h3 {
-  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
-  color: var(--text);
-}
-
-.award-label {
-  border-color: rgba(255, 209, 102, 0.42);
-  color: var(--accent-3);
-}
-
-.award-card .experience-details {
-  margin-top: 14px;
-}
-
-.award-actions {
+.compact-card .project-actions {
   display: flex;
-}
-
-@media (max-width: 980px) {
-  .award-card {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 @media (max-width: 640px) {
-  .award-card {
-    padding: 20px;
-  }
-}
-
-.award-card.award-media {
-  grid-template-columns: minmax(150px, 0.42fr) minmax(0, 1fr);
-  align-items: center;
-}
-
-.award-card.award-media .project-text h3 {
-  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
-}
-
-.award-card .project-image img {
-  max-height: 320px;
-}
-
-@media (max-width: 980px) {
-  .award-card.award-media {
+  .compact-grid {
     grid-template-columns: 1fr;
   }
 }
